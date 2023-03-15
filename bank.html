@@ -23,8 +23,83 @@
     </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <!-- header start  -->
+    <header>
+      <h1 class="text-6xl underline decoration-4 font-bold text-center my-5">
+        Welcome To <span class="text-rose-900">DOM BANK !!!</span>
+      </h1>
+    </header>
+    <main>
+      <!-- display section start  -->
+      <section class="w-9/12 mx-auto my-28">
+        <div class="grid grid-cols-3 gap-4">
+          <!-- deposit display box start  -->
+          <div class="bg-rose-500 p-8 rounded-lg text-center">
+            <h3 class="text-white font-semibold text-3xl mb-4">Deposit</h3>
+            <p class="text-white font-semibold text-5xl">
+              $<span id="deposit-total">00</span>
+            </p>
+          </div>
+          <!-- withdraw display box start  -->
+          <div class="bg-rose-700 p-8 rounded-lg text-center">
+            <h3 class="text-white font-semibold text-3xl mb-4">Withdraw</h3>
+            <p class="text-white font-semibold text-5xl">
+              $<span id="withdraw-total">00</span>
+            </p>
+          </div>
+          <!-- balance display box start  -->
+          <div class="bg-rose-900 p-8 rounded-lg text-center">
+            <h3 class="text-white font-semibold text-3xl mb-4">Balance</h3>
+            <p class="text-white font-semibold text-5xl">
+              $<span id="balance-total">1000</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- deposit & withdraw box section start  -->
+      <section class="w-9/12 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <!-- deposit box start  -->
+          <div class="bg-rose-600 p-10 rounded-lg">
+            <h3 class="text-white font-semibold text-4xl mb-5">
+              Please Deposit
+            </h3>
+            <input
+              type="text"
+              placeholder="Please enter your deposit amount"
+              class="block w-9/12 px-4 py-2 mb-4"
+              id="deposit-field"
+            />
+            <button
+              class="bg-green-600 px-5 py-3 text-xl font-semibold text-white rounded-lg hover:bg-zinc-800"
+              id="btn-deposit"
+            >
+              Submit
+            </button>
+          </div>
+
+          <!-- withdraw box start  -->
+          <div class="bg-rose-800 p-10 rounded-lg">
+            <h3 class="text-white font-semibold text-4xl mb-5">
+              Please Withdraw
+            </h3>
+            <input
+              type="text"
+              placeholder="Please enter your withdraw amount"
+              class="block w-9/12 px-4 py-2 mb-4"
+              id="withdraw-field"
+            />
+            <button
+              class="bg-green-600 px-5 py-3 text-xl font-semibold text-white rounded-lg hover:bg-zinc-800"
+              id="btn-withdraw"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
