@@ -23,8 +23,48 @@
     </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- header start  -->
+    <header>
+      <h1 class="text-6xl underline decoration-4 font-bold text-center my-5">
+        Welcome To <span class="text-rose-900">DOM BANK !!!</span>
+      </h1>
+    </header>
+
+    <!-- main start  -->
+    <main>
+      <!-- login section  start  -->
+      <section class="w-9/12 mx-auto bg-rose-500 p-10 mt-20 rounded-lg">
+        <h2 class="text-white font-semibold text-4xl mb-5">Please Log In</h2>
+
+        <input
+          type="email"
+          placeholder="Please enter your email "
+          class="block w-9/12 mb-5 px-4 py-3"
+          id="user-email"
+        />
+        <input
+          type="password"
+          placeholder="Please enter your password "
+          class="block w-9/12 mb-5 px-4 py-3"
+          id="user-password"
+        />
+        <button
+          class="bg-green-600 px-5 py-3 text-xl font-semibold text-white rounded-lg hover:bg-zinc-800"
+          id="btn-submit"
+        >
+          Submit
+        </button>
+      </section>
+    </main>
+
+    <!-- footer start  -->
+    <footer>
+      <p class="text-center text-rose-700 text-xl mt-24">
+        © 2023 DOM BANK. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- external js script  -->
+    <script src="js/index.js"></script>
   </body>
 </html>
